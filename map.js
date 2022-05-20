@@ -21,7 +21,6 @@ const getCoordinates = () => {
         .then(parsedResult => {
            arrayPlaces = parsedResult;
            setAddressSelect(parsedResult);
-            // setResultList(parsedResult);
         });
 };
 
@@ -35,6 +34,7 @@ const setAddressSelect = (arrayPlaces) => {
    });
 };
 
+// selected array
 
 const changeSelect = (selected) => {
    const lat = arrayPlaces[selected].lat;
